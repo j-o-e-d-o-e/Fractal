@@ -45,6 +45,10 @@ namespace BitmapSpace {
     }
 
     void Bitmap::setPixel(int x, int y, uint8_t red, uint8_t green, uint8_t blue) {
-
+        uint8_t *pPixel = m_pPixels.get(); // get normal pointer
+        pPixel += (y * 3) * m_width + (x * 3); // *3 because of colors
+        pPixel[0] = blue;
+        pPixel[1] = green;
+        pPixel[2] = red;
     }
 }
