@@ -2,6 +2,7 @@
 #define FRACTAL_RGB_H
 
 namespace FractalSpace {
+
     struct Rgb {
         double r;
         double g;

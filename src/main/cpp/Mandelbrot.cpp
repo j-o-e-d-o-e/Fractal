@@ -1,18 +1,9 @@
 #include <Mandelbrot.h>
-
-#include "Mandelbrot.h"
 #include <complex>
 
 using namespace std;
 
 namespace BitmapSpace {
-    Mandelbrot::Mandelbrot() {
-
-    }
-
-    Mandelbrot::~Mandelbrot() {
-
-    }
 
     int Mandelbrot::getIterations(double x, double y) {
         complex<double> z = 0;

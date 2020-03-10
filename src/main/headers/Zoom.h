@@ -12,5 +12,4 @@ namespace BitmapSpace {
     };
 }
 
-
 #endif //FRACTAL_ZOOM_H

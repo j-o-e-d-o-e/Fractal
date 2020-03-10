@@ -3,11 +3,6 @@
 
 #include <string>
 
-namespace Fractal {
-    class Greeter {
-        public:
-        std::string greeting();
-    };
-}
+namespace FractalSpace {}
 
 #endif

@@ -1,10 +1,12 @@
 #include <FractalCreator.h>
 #include <cassert>
+#include <utility>
 
 using namespace std;
 
 namespace FractalSpace {
-    void FractalCreator::run(string name) {
+
+    void FractalCreator::run(const string& name) {
         calculateIteration();
         calculateTotalIterations();
         calculateRangeTotals();
@@ -49,8 +51,6 @@ namespace FractalSpace {
                                      m_zoomList(m_width, m_height) {
         m_zoomList.add(Zoom(m_width / 2, m_height / 2, 4.0 / m_width));
     }
-
-    FractalSpace::FractalCreator::~FractalCreator() {}
 
     void FractalCreator::calculateIteration() {
         for (int y = 0; y < m_height; y++) {
@@ -109,7 +109,7 @@ namespace FractalSpace {
         }
     }
 
-    void FractalCreator::writeBitmap(string name) {
+    void FractalCreator::writeBitmap(const string& name) {
         m_bitmap.write(name);
     }
 }

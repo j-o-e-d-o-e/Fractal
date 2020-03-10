@@ -14,6 +14,7 @@ using namespace std;
 using namespace BitmapSpace;
 
 namespace FractalSpace {
+
     class FractalCreator {
     private:
         int m_width;
@@ -30,11 +31,11 @@ namespace FractalSpace {
 
         bool m_bGotFirstRange{false};
     public:
-        void run(string name);
+        void run(const string& name);
 
         FractalCreator(int width, int height);
 
-        virtual ~FractalCreator();
+        virtual ~FractalCreator() = default;
 
         void addZoom(const Zoom &zoom);
 
@@ -51,7 +52,7 @@ namespace FractalSpace {
 
         void drawFractal();
 
-        void writeBitmap(string name);
+        void writeBitmap(const string& name);
     };
 }
 
