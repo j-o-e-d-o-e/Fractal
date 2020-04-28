@@ -12,6 +12,5 @@ namespace BitmapSpace {
 
         static int getIterations(double x, double y);
     };
-
 }
 #endif //FRACTAL_MANDELBROT_H
